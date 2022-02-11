@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="" method="post" enctype="multipart/form-data" >
+
+            <label for="nome">Nome </label>
+            <br>
+            <input type="text" name="name" id="nome" required />
+            <br>
+            <br>
+            <label for="email">Email </label>
+            <br>
+            <input type="email" name="email" id="email" required />
+            <br><br>
+
+            <label for="idade">Idade </label>
+            <br>
+            <input type="number" id="idade" name="age" step="1" min="12" style="width: 40px;" required />
+            <br><br>
+
+            <label for="data-nascimento">Data de Nascimento </label>
+            <br>
+            <input type="date" id="data-nascimento" name="data-nascimento" required />
+            <br>
+            <br>
+
+            <label>Onde você possui conta: 
+                <br>
+                <label>
+                    <input type="checkbox" name="opcao1" /> 
+                    Instagram 
+                </label>
+                <label>
+                    <input type="checkbox" name="opcao2" /> 
+                    Facebook 
+                </label>
+                <label>
+                    <input type="checkbox" name="opcao3" />
+                     YouTube 
+                </label>
+            
+            <p>Sexo <br>
+                <input type="radio" name="genero" value="masculino" /><label> Masculino </label>
+                <input type="radio" name="genero" value="feminino" /><label> Feminino </label>
+            </p>
+            <label>Cor dos Olhos <input type="color" name="cor-olhos" required /></label>
+            <br><br>
+            <label for="bio" required>Biografia</label>
+            <br>
+
+            <textarea name="bio" style="height: 80px; width: 250px;" required>
+
+</textarea><br><br>
+            <label>Foto do perfil 
+                <br>
+                <input type="file" name="foto-perfil" accept="image/*" required> </label>
+                <br><br>
+
+
+
+            <label>Telefone 
+                <br> 
+                <input type="tel" name="telefone" required />
+            </label>
+            <br><br>
+            <label>Link do Perfil do Facebook 
+                <br> 
+                <input type="url" name="perfil-facebook" required />
+            </label>
+            <br>
+            <br>
+
+            <label>Senha 
+                <br>
+                <input type="password" name="senha" minlength="6" maxlength="8" required />
+            </label>
+            <br>
+            <br>
+
+            <button type="reset" name="reset" > Limpar </button> 
+            <button type="submit" name="submit" > Enviar Dados </button>
+
+        </form>
+    </fieldset>
+
+</body>
+
+</html>
